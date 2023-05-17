@@ -93,6 +93,20 @@
     </div>
 
     <script>
+
+        $('.tab h2').click(function(){
+            $('.tab h2').removeClass('on')
+            $(this).addClass('on')
+
+            $('.tab_item ul').css('display','none')
+            $('.tab_item ul').eq($(this).index()).css('display','block')
+
+        })
+
+
+
+
+
         var index = 0
         $('.slide a').eq(index).show()
         setInterval(function(){
@@ -112,6 +126,8 @@
                 $('.gnb').removeClass('active')
             },
             )
+
+            
     </script>
 </body>
 </html>
